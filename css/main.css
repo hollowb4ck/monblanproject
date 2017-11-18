@@ -1,7 +1,14 @@
+
+body {
+	background: #fafafa;
+}
 /**************************************/
 /************* HEADER ****************/
 /************************************/
-
+header {
+	background: #fff;
+	border-bottom:1px solid #edeeee;
+}
 header .nav-bar {
 	margin-top: 10px;
 }
@@ -37,6 +44,12 @@ main .profile .diff-flex {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+main .profile .diff-flex .col-sm-3 {
+	width: 20%;
+}
+main .profile .col-sm-9 {
+	margin-left: 10%;
 }
 main .profile h2 {
 	font-family: 'MyriadPro-Regular';
@@ -256,6 +269,12 @@ footer .nav>li>a {
 		display: block;
 		text-align: center;
 	}
+	main .profile .col-sm-9 {
+		margin-left: 0;
+	}
+	main .profile .diff-flex .col-sm-3 {
+		width: -webkit-fill-available;
+	}
 	main .profile .start-date {
 		margin: 0 auto;
 	}
@@ -286,6 +305,9 @@ footer .nav>li>a {
 		font-size: 22px;
 	}
 	main .profile .start-date {
-		font-size: 12px;
+		font-size: 10px;
+	}
+	main .profile .col-sm-9 {
+		margin-left: 0;
 	}
 }
