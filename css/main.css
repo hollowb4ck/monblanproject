@@ -50,7 +50,7 @@ main .profile .start-date {
 	font-size: 15px;
 	padding: 5px 0px;
 	text-align: center;
-	width: 45%;
+	width: 31%;
 }
 main .profile p {
 	font-family: 'ProximaNova-Regular';
@@ -195,8 +195,8 @@ main .gallery #load-more:focus {
 	font-size: 18px;
 }
 .fa-times:before {
-    content: "\f00d";
-    font-family: 'fontawesome';
+	content: "\f00d";
+	font-family: 'fontawesome';
 	font-size: 18px;
 }
 
@@ -278,5 +278,14 @@ footer .nav>li>a {
 	}
 	.input-group {
 		width: 150%;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+	main .profile h2 {
+		font-size: 22px;
+	}
+	main .profile .start-date {
+		font-size: 12px;
 	}
 }
