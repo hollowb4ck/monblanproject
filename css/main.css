@@ -104,7 +104,9 @@ main .campaign-status table td:first-child {
 main .campaign-status table tr span {
 	font-family: 'ProximaNova-Semibold';
 }
-
+.input-group {
+	width: 80%;
+}
 
 /**************************************/
 /************ MAIN GALLERY************/
@@ -192,7 +194,11 @@ main .gallery #load-more:focus {
 	font-family: 'fontawesome';
 	font-size: 18px;
 }
-
+.fa-times:before {
+    content: "\f00d";
+    font-family: 'fontawesome';
+	font-size: 18px;
+}
 
 /**************************************/
 /************* FOOTER ****************/
@@ -260,17 +266,17 @@ footer .nav>li>a {
 		padding: 5px 50px;
 	}
 	.input-group {
-		width: 225%;
-	}
-	.form-control {
-		height: 30px;
+		width: 185%;
 	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	main .gallery .gallery-status .img-upload {
 		margin: 0;
 	}
 	main .gallery .gallery-status p {
 		font-size: 12px;
+	}
+	.input-group {
+		width: 150%;
 	}
 }

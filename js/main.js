@@ -1,17 +1,22 @@
 'use sctrict'
-$('#sandbox-container .input-group.date').datepicker({
+$('#sandbox-container input').datepicker({
     format: "mm_dd_yyyy",
-    clearBtn: true,
     autoclose: true,
-    orientation: "bottom left",
-});
-$('#sandbox-container-2 .input-group.date').datepicker({
-    format: "mm_dd_yyyy",
-    clearBtn: true,
-    autoclose: true,
-    orientation: "bottom left",
+    orientation: "bottom left"
 });
 
+$('#sandbox-container-2 input').datepicker({
+    format: "mm_dd_yyyy",
+    autoclose: true,
+    orientation: "bottom left"
+});
+[].forEach.call($('.clear-input'),function(el){
+    el.addEventListener('click', function (e) {
+    	$('#sandbox-container input')[0].value = "";
+		$('#sandbox-container-2 input')[0].value = "";
+
+    })
+});
 $(function () {
     $(".rel-block").slice(0, 9).show();
     $("#load-more").on('click', function (e) {
