@@ -1,0 +1,276 @@
+/**************************************/
+/************* HEADER ****************/
+/************************************/
+
+header .nav-bar {
+	margin-top: 10px;
+}
+header .nav-bar ul li {
+	display: inline-block;
+}
+header .nav-bar ul li:last-child {
+	float: right;
+	margin-top: 15px;
+}
+header .nav-bar ul li button {
+	background: #4090db;
+	border: 1px solid #4090db;
+	border-radius: 20px;
+	padding: 5px 45px;
+	font-family: 'ProximaNova-Regular';
+	font-size: 16px;
+}
+header .nav-bar ul li button:focus {
+	outline: none;
+}
+
+
+/**************************************/
+/*********** MAIN PROFILE ************/
+/************************************/
+
+main .profile .diff-flex {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+main .profile h2 {
+	font-family: 'MyriadPro-Regular';
+	font-size: 35px;
+}
+main .profile .start-date {
+	border: 1px solid #4090db;
+	border-radius: 3px;
+	color: #4090db;
+	font-family: 'HelveticaNeue';
+	font-size: 15px;
+	padding: 5px 0px;
+	text-align: center;
+	width: 45%;
+}
+main .profile p {
+	font-family: 'ProximaNova-Regular';
+	font-size: 17px;
+}
+main .profile p span {
+	font-family: 'ProximaNova-Bold';
+}
+
+
+/**************************************/
+/******* MAIN CAMPAIGN STATUS ********/
+/************************************/
+
+main .campaign-status h3 {
+	font-family: 'ProximaNova-Regular';
+	font-size: 24px;
+}
+main .campaign-status table {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	border-collapse: separate;
+	padding-left: 55px;
+	padding-right: 55px;
+	width: 100%;
+}
+main .campaign-status .input-group-addon {
+	cursor: pointer;
+}
+main .campaign-status table tr {
+	border-bottom:  1px solid #dddddd;;
+	display: block;
+	font-size: 17px;
+}
+main .campaign-status table tr:first-child {
+	padding-top: 10px;
+}
+main .campaign-status table tr:last-child {
+	border: none;
+	padding-bottom: 10px;
+}
+main .campaign-status table td {
+	border: none;
+	padding: 7px 30px;
+	vertical-align: middle;
+	width: 37%;
+}
+main .campaign-status table td:first-child {
+	width: 25%;
+}
+main .campaign-status table tr span {
+	font-family: 'ProximaNova-Semibold';
+}
+
+
+/**************************************/
+/************ MAIN GALLERY************/
+/************************************/
+
+main .gallery .rel-block {
+	display: none;
+	position: relative;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+main .gallery .rel-block img {
+	width: 100%;
+}
+
+main .gallery .gallery-status {
+	color: #fff;
+	left: 0;
+	font-family: 'ProximaNova-Semibold';
+	position: absolute;
+	padding-left: 15px;
+	padding-right: 15px;
+	right: 0;
+	top: 40%;
+}
+main .gallery .gallery-status .col-sm-4 {
+	padding: 0;
+}
+main .gallery .gallery-status .add-icon {
+	padding-left: 15px;
+}
+main .gallery .gallery-status i {
+	float: left
+}
+main .gallery .gallery-status p {
+	margin-left: 22px;
+	font-size: 17px;
+}
+main .gallery .gallery-status p:first-child {
+	margin: 0;
+}
+main .gallery .gallery-status .img-upload {
+	margin-top: 30%;
+	text-align: center;
+}
+main .gallery .load-more-btn {
+	text-align: center;
+}
+main .gallery #load-more {
+	background: transparent;
+	border: 1px solid #000;
+	border-radius: 20px;
+	font-size: 12px;
+	font-family: 'ProximaNova-Regular';
+	padding: 10px 40px;
+	margin-top: 85px;
+	text-transform: uppercase;
+}
+main .gallery #load-more:focus {
+	outline: none;
+}
+
+
+/**************************************/
+/************** ICONS ****************/
+/************************************/
+
+.glyphicon-th:before {
+	content: "\f133";
+	font-family: 'fontawesome';
+}
+.glyphicon-comment:before{
+	content:"\e111";
+	font-family: 'glyphicons-halflings-regular';
+	font-size: 18px;
+}
+.fa-heart:before {
+	content: "\f004";
+	font-family: 'fontawesome';
+	font-size: 18px;
+}
+
+.fa-play:before {
+	content: "\f04b";
+	font-family: 'fontawesome';
+	font-size: 18px;
+}
+
+
+/**************************************/
+/************* FOOTER ****************/
+/************************************/
+
+footer {
+	margin-top: 100px;
+}
+footer .navbar-default .navbar-collapse, .navbar-default .navbar-form,
+footer .navbar-default {
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+footer .navbar-default .navbar-nav>li>a {
+	color: #125688;
+	font-family: 'ProximaNova-Bold';
+	font-size: 12px;
+	text-transform: uppercase;
+}
+footer .nav>li>a {
+	padding: 5px 20px 5px 0px;
+}
+
+
+/**************************************/
+/************** MEDIA ****************/
+/************************************/
+
+@media (max-width: 768px) {
+	main .profile h2 {
+		font-size: 25px;
+	}
+	main .profile .start-date {
+		font-size: 10px;
+	}
+	main .profile p {
+		font-size: 12px;
+	}
+	footer .navbar-default .navbar-collapse, .navbar-default .navbar-form, footer .navbar-default {
+		padding-right: 15px;
+		padding-left: 15px;
+		text-align: center;
+	}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	header .nav-bar ul li button {
+		padding: 5px 20px;
+	}
+	header .nav-bar ul li .logo img {
+		width: 85%;
+	}
+	main .profile .diff-flex {
+		display: -ms-block;
+		display: block;
+		text-align: center;
+	}
+	main .profile .start-date {
+		margin: 0 auto;
+	}
+	main .campaign-status table tr {
+		font-size: 14px;
+	}
+	main .campaign-status table td {
+		padding: 5px 50px;
+	}
+	.input-group {
+		width: 225%;
+	}
+	.form-control {
+		height: 30px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	main .gallery .gallery-status .img-upload {
+		margin: 0;
+	}
+	main .gallery .gallery-status p {
+		font-size: 12px;
+	}
+}
